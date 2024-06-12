@@ -1,5 +1,6 @@
 //rafce => créer un component fonctionnel
 
+import { FaLocationArrow } from 'react-icons/fa'
 import MagicButton from './ui/MagicButton'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
@@ -25,14 +26,19 @@ const Hero = () => {
                 </h2>
                 <TextGenerateEffect
                     className='text-center text-[40px] md:text-5xl lg:text-6xl mt-4'
-                    words="Welcome to my page ! "
+                    words="Welcome to my page"
                 />
                 <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
                     Hi, I'm Ulysse Couchoud and I'm a web developer who loves to create beautiful and functional websites.
                 </p>
 
                 <a href='about'>
-                  <MagicButton />
+                  <MagicButton
+                    title='See my work'
+                    icon={<FaLocationArrow />}
+                    position='right'
+                    handleClick={() => {console.log('clicked')}}
+                  />
                 </a>
             </div>
         </div>
