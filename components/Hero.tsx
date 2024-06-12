@@ -1,5 +1,6 @@
 //rafce => créer un component fonctionnel
 
+import MagicButton from './ui/MagicButton'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
 
@@ -9,7 +10,7 @@ const Hero = () => {
         <div>
         <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen' fill='white'/>
         <Spotlight className='top-10 left-full h-[80vh] w-[50vw]' fill='purple'/>
-        <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill='blue'/>
+        <Spotlight className='top-28 left-80 h-[80vh] w-[50vw]' fill='purple'/>
         </div>
 
 
@@ -27,12 +28,15 @@ const Hero = () => {
                     words="Welcome to my page ! "
                 />
                 <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                    My name is Ulysse Couchoud and I'm a web developer who loves to create beautiful and functional websites.
+                    Hi, I'm Ulysse Couchoud and I'm a web developer who loves to create beautiful and functional websites.
                 </p>
+
+                <a href='about'>
+                  <MagicButton />
+                </a>
             </div>
         </div>
     </div>
-    
     
   )
 }
