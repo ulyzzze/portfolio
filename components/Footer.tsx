@@ -1,7 +1,9 @@
 import { FaLocationArrow } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
+import "../components/ui/linkedin.css";
 
 const Footer = () => {
   return (
@@ -24,7 +26,7 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+        <a href="mailto:ulysse.couchoud@epitech.eu">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -37,15 +39,33 @@ const Footer = () => {
           Copyright © 2024 Adrian Hajdin
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <img src={info.img} alt="icons" width={20} height={20} />
+        {/* LinkedIn Tooltip */}
+        <div className="tooltip-container">
+          <div className="tooltip">
+            <div className="profile">
+              <div className="user">
+                <div className="img-ui">Ui</div>
+                <div className="details">
+                  <div className="name">Ulysse</div>
+                  <div className="username">@username</div>
+                </div>
+              </div>
+              <div className="about">100+ Connections</div>
             </div>
-          ))}
+          </div>
+          <div className="text">
+            <a className="icon" href="https://www.linkedin.com/in/ulysse-couchoud">
+              <div className="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span className="p-[0.4rem]"><FaLinkedinIn size={40}/>
+                </span>
+              </div>
+              <div className="text">LinkedIn</div>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
