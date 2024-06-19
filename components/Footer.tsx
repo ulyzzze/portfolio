@@ -1,9 +1,11 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import "../components/ui/linkedin.css";
+import "../components/ui/github.css";
 
 const Footer = () => {
   return (
@@ -17,7 +19,7 @@ const Footer = () => {
         />
       </div>
 
-      <div className="flex mt-[-4rem] md:flex-row flex-col justify-center items-center pb-[8rem]">
+      <div className="flex mt-[-4rem] md:flex-row flex-row justify-center items-center pb-[8rem] gap-10">
       {/* LinkedIn Tooltip */}
         <div className="tooltip-container">
           <div className="tooltip">
@@ -43,6 +45,33 @@ const Footer = () => {
                 </span>
               </div>
               <div className="text">LinkedIn</div>
+            </a>
+          </div>
+        </div>
+
+        {/* Github Tooltip */}
+        <div className="tooltip-container-github">
+          <div className="tooltip-github">
+            <div className="profile-github">
+              <div className="user-github">
+                <div className="img-ui-github">Ui</div>
+                <div className="details-github">
+                  <div className="name-github pt-[0.9rem]" >@ulyzzze</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-github">
+            <a className="icon-github" href="https://github.com/ulyzzze">
+              <div className="layer-github">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span className="p-[0.8rem]"><FaGithub size={30}/>
+                </span>
+              </div>
+              <div className="text-github"></div>
             </a>
           </div>
         </div>
