@@ -17,6 +17,37 @@ const Footer = () => {
         />
       </div>
 
+      <div className="flex mt-[-4rem] md:flex-row flex-col justify-center items-center pb-[8rem]">
+      {/* LinkedIn Tooltip */}
+        <div className="tooltip-container">
+          <div className="tooltip">
+            <div className="profile">
+              <div className="user">
+                <div className="img-ui">Ui</div>
+                <div className="details">
+                  <div className="name">Ulysse</div>
+                  <div className="pl-[0.4rem]"> Couchoud</div>
+                </div>
+              </div>
+              <div className="about">100+ Connections</div>
+            </div>
+          </div>
+          <div className="text">
+            <a className="icon" href="https://www.linkedin.com/in/ulysse-couchoud">
+              <div className="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span className="p-[0.8rem]"><FaLinkedinIn size={30}/>
+                </span>
+              </div>
+              <div className="text">LinkedIn</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> digital
@@ -34,40 +65,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Adrian Hajdin
-        </p>
 
-        {/* LinkedIn Tooltip */}
-        <div className="tooltip-container">
-          <div className="tooltip">
-            <div className="profile">
-              <div className="user">
-                <div className="img-ui">Ui</div>
-                <div className="details">
-                  <div className="name">Ulysse</div>
-                  <div className="username">@username</div>
-                </div>
-              </div>
-              <div className="about">100+ Connections</div>
-            </div>
-          </div>
-          <div className="text">
-            <a className="icon" href="https://www.linkedin.com/in/ulysse-couchoud">
-              <div className="layer">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span className="p-[0.4rem]"><FaLinkedinIn size={40}/>
-                </span>
-              </div>
-              <div className="text">LinkedIn</div>
-            </a>
-          </div>
-        </div>
-      </div>
     </footer>
   );
 };
