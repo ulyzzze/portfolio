@@ -71,26 +71,37 @@ const Footer = () => {
                 <span className="p-[0.8rem]"><FaGithub size={30}/>
                 </span>
               </div>
-              <div className="text-github"></div>
+              <div className="text-github">Github</div>
             </a>
           </div>
         </div>
       </div>
 
       <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
-        </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
-        </p>
-        <a href="mailto:ulysse.couchoud@epitech.eu">
+        <aside className="bg-black text-white p-6 rounded-lg w-full max-w-lg font-mono">
+          <div className="flex justify-between items-center">
+            <div className="flex space-x-2 text-red-500">
+              <div className="w-3 h-3 rounded-full bg-red-500"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+            <p className="text-sm">bash</p>
+          </div>
+          <div className="mt-4">
+            <p className="text-purple">$ help</p>
+            <p className="text-white"> You want to know more about me ?</p>
+            <br></br>
+            <p className="text-white"> Contact me on phone : +33 6 49 01 01 98</p>
+            <p className="text-white"> Contact me on email : ulysse.couchoud@epitech.eu</p>
+            <p className="text-purple">$</p>
+          </div>
+        </aside>
+
+        <a href="#about" className="pt-[3rem]">
           <MagicButton
-            title="Let's get in touch"
+            title="One more time ?"
             icon={<FaLocationArrow />}
-            position="right"
+            position="left"
           />
         </a>
       </div>
